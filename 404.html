@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="简体中文">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.45">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABBUlEQVR4AZTTJRBUURTH4TtDwXuPdPrgbhHXiksf3CPucRNScHd3d3d3uO9bKeu7b79+fun8Q17CNHyMMUqaiPE4fEyYVjjGNKnNwQ4lpgV8lManEfwfosLHEGPU1N3ZnAv4qlT+NiQ56uPWSjKBrztUSnIaB66sY1vgxgxoMXB5NbsCB9rxcB5fN2M5/16nCFxeS6YTezpzsB1Pu/C2O7/78/99eYBYHXh+gqdHObGIK4GHgevjVIt1AgAnhvE4cGe8euoHbizgYuD2RGgx8O0RpwIPRmsmJDGqcrANd3pLo/qVr03hUlcpfSwf0/vD3JwkPdPK5/zhkOz+/f1FIDv/RcnOAEjywH/DhgADAAAAAElFTkSuQmCC"><title>秒传链接提取脚本 - 文档&教程</title><meta name="description" content="用于提取和生成百度网盘秒传链接的脚本教程">
+    <link rel="modulepreload" href="/rapid-upload-userscript-doc/assets/app.23ce21d2.js"><link rel="modulepreload" href="/rapid-upload-userscript-doc/assets/404.html.1df47c8b.js"><link rel="modulepreload" href="/rapid-upload-userscript-doc/assets/404.html.5e698b68.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/index.html.bdb523d2.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/作者.html.473147ce.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/关于我.html.30729143.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/历史版本.html.8fe3edb5.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/开发计划.html.90118795.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/文档开发.html.0df69dd8.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/网页端更新日志.html.afe2fc71.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/脚本更新日志.html.9cf1a939.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/通知.html.c1319097.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/index.html.911f179a.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/常见问题.html.cf7e20cf.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/错误代码.html.a90cbc55.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/秒传格式.html.2e1b8add.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/脚本说明.html.24ae5dcf.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/About.html.a8e12ff8.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/Android.html.6ca4b6db.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/MacOS.html.fabcef84.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/Web.html.b62b9463.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/Windows.html.9394deb7.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/PCS-Go 客户端.html.41661eb3.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/一键秒传.html.fc06057e.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/极速生成.html.b96b5af4.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/秒传生成相关.html.bbcfe94a.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/已知和谐原因.html.2b864b8d.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/度盘防和谐.html.dc97c838.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/文件和谐.html.3981c7f3.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/index.html.c9b0b924.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/作者.html.9575766a.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/关于我.html.3eefeaf7.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/历史版本.html.1c349912.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/开发计划.html.978ec6bd.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/文档开发.html.5c8f8c01.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/网页端更新日志.html.75291995.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/脚本更新日志.html.e8264fc1.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/通知.html.d972260f.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/index.html.b843396e.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/常见问题.html.213b5f4d.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/错误代码.html.af5a049d.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/秒传格式.html.e98bc854.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/脚本说明.html.711d08de.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/About.html.c573528a.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/Android.html.3d5be0d3.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/MacOS.html.0c6e0a44.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/Web.html.107c32f1.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/Windows.html.21430b20.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/PCS-Go 客户端.html.17b34190.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/一键秒传.html.8b45bcc0.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/极速生成.html.4bcefd7d.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/秒传生成相关.html.1b5258ad.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/已知和谐原因.html.b21e856d.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/度盘防和谐.html.ef630a18.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/文件和谐.html.618a420f.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/404.847f5675.js"><link rel="prefetch" href="/rapid-upload-userscript-doc/assets/Layout.31af8b8c.js">
+    <link rel="stylesheet" href="/rapid-upload-userscript-doc/assets/style.5fc628bf.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>找不到该页面</blockquote><a href="/rapid-upload-userscript-doc/" class="">返回首页</a></div></div><!----><!--]--></div>
+    <script type="module" src="/rapid-upload-userscript-doc/assets/app.23ce21d2.js" defer></script>
+  </body>
+</html>
